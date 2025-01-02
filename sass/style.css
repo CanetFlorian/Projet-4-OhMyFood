@@ -210,7 +210,7 @@ body main .presentation p {
   padding: 18px;
   font-weight: 300;
 }
-body main .presentation button {
+body main .presentation a {
   border-radius: 50px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
@@ -220,6 +220,7 @@ body main .presentation button {
   padding: 15px 20px;
   cursor: pointer;
   margin-bottom: 40px;
+  text-decoration: none;
 }
 body main .fonctionnement {
   display: flex;
