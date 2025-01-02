@@ -1,9 +1,426 @@
-$color-primary : #9356DC;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
 
-$color-secondary : #FF79DA;
+$police-titre: "Shrikhand", cursive;
+$police-texte: "Roboto", sans-serif;
 
-$color-tertiary : #99E2D0;
+/* ************************************* Reset ***************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-$police-titre : shrikhand-regular;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 
-$police-texte : roboto-regular;
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+.shrikhand-regular {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.color-primary {
+  color: #9356DC;
+}
+
+.color-secondary {
+  color: #FF79DA;
+}
+
+.color-tertiary {
+  color: #99E2D0;
+}
+
+
+
+
+body {
+  margin: 0;
+  width: auto;
+
+  header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    img {
+      display: flex;
+      justify-content: center;
+      ;
+      margin: auto;
+
+    }
+  }
+
+  main {
+
+    .localisation-restaurant {
+      background-color: #EAEAEA;
+      margin-top: 5px;
+      padding: 20px;
+      box-shadow: 0px 5px 5px grey, 0px -5px 5px grey;
+      position: relative;
+      z-index: 2;
+      
+      form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        gap: 10px;}
+
+      input {
+        border: none;
+        background-color: #EAEAEA;}
+
+      
+    }
+  
+
+
+    .presentation {
+      display: flex;
+      flex-direction: column;
+      background-color: #F6F6F6;
+      position: relative;
+      z-index: 1;
+      padding-top: 50px;
+      align-items: center;
+      
+      h1 {
+        font-family: $police-texte;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+      }
+
+      p {
+        font-family: $police-texte;
+        padding:20px;
+      }
+
+      button {
+        border-radius: 50px;
+        background: linear-gradient(#9356DC,#FF79DA);
+        color: white;
+        font-family: $police-texte;
+        font-size:16px;
+        border:none;
+        padding:15px 20px;
+        cursor:pointer;
+        margin-bottom: 40px;
+      }
+    }
+
+    .fonctionnement {
+      display:flex; 
+      flex-direction: column;
+      padding-bottom: 20px;
+      padding-top:40px;
+  
+      h1 {
+        font-family: $police-texte;
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 20px;
+      
+      }
+
+      .choisissez-un-restaurant {
+      display: flex;
+      flex-direction: row;
+      background-color: #F6F6F6;
+      border-radius: 15px;
+      margin:25px;
+      padding:20px;
+      box-shadow: 2px 2px 5px grey;
+      position: relative;
+      
+
+        .fonctionnement-number1{
+          border-radius: 10px;
+          width: 20px;
+          height: 20px;
+          background-color: $color-primary;
+          font-size:15px;
+          position: absolute;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          left: -10px;
+          color:white;
+          
+        }
+
+        .telephone-logo{
+          padding-left: 10px;
+
+        }
+        
+        .choix-restaurant {
+        
+          font-family: $police-texte;
+          font-weight: bold;
+          margin-left: 40px;
+          
+
+
+        }
+      }
+      
+      .composez-votre-menu{
+        display: flex;
+        flex-direction: row;
+        background-color: #F6F6F6;
+        border-radius: 15px;
+        margin:25px;
+        padding:20px;
+        box-shadow: 2px 2px 5px grey;
+        position: relative;
+        
+  
+        .fonctionnement-number2{
+          border-radius: 10px;
+          width: 20px;
+          height: 20px;
+          background-color: $color-primary;
+          font-size:15px;
+          position: absolute;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          left: -10px;
+          color:white;
+            
+        }
+  
+        .menu-logo{
+          padding-left: 10px;
+  
+        }
+          
+        .composition-menu {
+          
+          font-family: $police-texte;
+          font-weight: bold;
+          margin-left: 40px;
+            
+  
+  
+        }
+      }
+
+      .degustez-au-restaurant {
+
+        display: flex;
+        flex-direction: row;
+        background-color: #F6F6F6;
+        border-radius: 15px;
+        margin:25px;
+        padding:20px;
+        box-shadow: 2px 2px 5px grey;
+        position: relative;
+        
+  
+        .fonctionnement-number3{
+          border-radius: 10px;
+          width: 20px;
+          height: 20px;
+          background-color: $color-primary;
+          font-size:15px;
+          position: absolute;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          left: -10px;
+          color:white;  
+          }
+  
+        .resto-logo{
+          padding-left: 10px;
+  
+        }
+          
+        .deguster-restaurant {
+          
+          font-family: $police-texte;
+          font-weight: bold;
+          margin-left: 40px;
+            
+  
+  
+        }
+      }
+    }
+
+    .restaurants{
+      display:flex;
+      flex-direction: column;
+      padding-top:20px;
+      background-color: #F6F6F6;
+
+      .restaurant_title {
+        font-family: $police-texte;
+        font-size:20px;
+        font-weight: bold;
+        margin-left:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+      }
+
+      .restaurant-card {
+        
+        a {
+          display: flex;
+          justify-content: center;
+          
+          .card-resto {
+          width: 90%;
+          justify-content: center;
+          align-items: center;
+
+          }
+          .card-resto-img {
+          width: 100%;
+          }
+        }
+      }
+
+    
+
+
+
+    }
+  }
+}
