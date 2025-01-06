@@ -192,10 +192,253 @@ body {
   }
 
   main {
-
-    .images-resto1 img{
+    
+    .images-resto1 {
       width: 100%;
+      z-index:-1;
+      position: relative;
+      overflow: visible;
+      height: 200px;
+    }
+    
+
+      .images-resto1 img{
+      width: 100%;
+      height: auto;
+      position: relative;
       object-fit: cover;
+      
+      
+      }
+    
+    .restaurant1-menucard { 
+      background-color: #F6F6F6;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px ;
+      z-index:1;
+      position: relative;
+      display:flex;
+      flex-direction: column;
+
+      .restaurant1-menutitle {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        
+
+        h1{
+          font-family: $police-titre;
+          font-size:28px;
+        }
+
+        .coeur-logo img{
+          width: 22px;
+          height: 21px;
+          margin-top: 22px;
+         
+        }
+      }
+
+      .restaurant1-menu-entrées {
+       
+        padding-top:40px;
+
+        .menu-entrées-title {
+          font-family: $police-texte;
+          font-size:16px;
+          font-weight: 300;
+          margin-left:20px;
+          padding-bottom: 5px;
+        
+        
+        
+          .entrées-underline {
+          text-decoration: underline 3px $color-tertiary;
+          position:relative;
+          }
+        }
+
+        .entrées1 {
+
+          display: flex;
+          flex-direction: column;
+          background-color: #F6F6F6;
+          border-radius: 15px;
+          margin:10px;
+          padding:10px;
+          gap:5px;
+          
+          box-shadow: 2px 2px 5px grey;
+          position: relative;
+
+          .entrées-title {
+            font-family: $police-texte;
+            font-size : 18px;
+            font-weight: 500 ;
+          }
+
+          .position-sub-tarifs {
+            display : flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .tarifs {
+              font-weight:700;
+            }
+          
+
+            .entrées-subtitle {
+            font-family: $police-texte;
+            font-size : 15px;
+            font-weight: 300;
+            }
+
+          
+            
+          }
+
+        }
+      }
+
+      .restaurant1-menu-plats {
+
+        padding-top:40px;
+
+        .menu-plats-title {
+          font-family: $police-texte;
+          font-size:16px;
+          font-weight: 300;
+          margin-left:20px;
+          padding-bottom: 5px;
+
+          .plats-underline {
+            text-decoration: underline 3px $color-tertiary;
+            position:relative;
+          }
+          
+
+        }
+
+        .plats1 {
+
+          display: flex;
+          flex-direction: column;
+          background-color: #F6F6F6;
+          border-radius: 15px;
+          margin:10px;
+          padding:10px;
+          gap:5px;
+          
+          box-shadow: 2px 2px 5px grey;
+          position: relative;
+
+          .plats-title {
+            font-family: $police-texte;
+            font-size : 18px;
+            font-weight: 500 ;
+          }
+
+          .position-sub-tarifs {
+            display : flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .tarifs {
+              font-weight:700;
+            }
+          
+
+            .plats-subtitle {
+            font-family: $police-texte;
+            font-size : 15px;
+            font-weight: 300;
+            }
+          }
+        }
+      }
+
+      .restaurant1-menu-desserts {
+        padding-top :40px;
+
+        .menu-desserts-title {
+          font-family: $police-texte;
+          font-size:16px;
+          font-weight: 300;
+          margin-left:20px;
+          padding-bottom: 5px;
+
+          .dessert-underline {
+            text-decoration: underline 3px $color-tertiary;
+            position:relative;
+          }
+
+          
+        }
+
+        .desserts1 {
+
+          display: flex;
+          flex-direction: column;
+          background-color: #F6F6F6;
+          border-radius: 15px;
+          margin:10px;
+          padding:10px;
+          gap:5px;
+          
+          box-shadow: 2px 2px 5px grey;
+          position: relative;
+
+          .desserts-title {
+            font-family: $police-texte;
+            font-size : 18px;
+            font-weight: 500 ;
+          }
+
+          .position-sub-tarifs {
+            display : flex;
+            flex-direction: row;
+            justify-content: space-between;
+          
+            .tarifs {
+              font-weight:700;
+            }
+          
+
+            .desserts-subtitle {
+            font-family: $police-texte;
+            font-size : 15px;
+            font-weight: 300;
+            }
+          }
+        }
+      }
+      .commander{
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:30px;
+        button {
+      border-radius: 50px;
+      background: linear-gradient(#FF79DA,#9356DC);
+      color: white;
+      font-family: $police-texte;
+      font-size:16px;
+      border:none;
+      padding:15px 40px;
+      cursor:pointer;
+      text-decoration: none;
+      transition: 0.5s;
+      margin-bottom:10px;
+      
+      }
+      }
+        
+
+
+      
+
+    
     }
 
     .localisation-restaurant {
