@@ -488,6 +488,15 @@ body footer a {
     flex-direction: row;
     margin-left: 20px;
   }
+  body main .fonctionnement .choisissez-un-restaurant {
+    padding-right: 60px;
+  }
+  body main .fonctionnement .composez-votre-menu {
+    padding-right: 60px;
+  }
+  body main .fonctionnement .degustez-au-restaurant {
+    padding-right: 60px;
+  }
   body main .restaurants {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -618,6 +618,18 @@ body {
         display:flex;
         flex-direction: row;
         margin-left:20px;
+
+        .choisissez-un-restaurant{
+          padding-right: 60px;
+        }
+
+        .composez-votre-menu{
+          padding-right: 60px;
+        }
+
+        .degustez-au-restaurant{
+          padding-right: 60px;
+        }
       }
 
       .restaurants{
