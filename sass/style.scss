@@ -176,17 +176,27 @@ body {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     position:relative;
     z-index: 3;
+    display:flex;
+
+    nav {display:flex;
+    align-items: center;
+    padding-left:10px;
+    }
 
     img {
       display: flex;
       justify-content: center;
-      ;
       margin: auto;
 
     }
   }
 
   main {
+
+    .images-resto1 img{
+      width: 100%;
+      object-fit: cover;
+    }
 
     .localisation-restaurant {
       background-color: #EAEAEA;
