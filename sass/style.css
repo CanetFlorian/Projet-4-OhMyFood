@@ -166,6 +166,7 @@ body header {
   position: relative;
   z-index: 3;
   display: flex;
+  /********---- CSS ------------- RESTAURANT 1-----------********/
 }
 body header nav {
   display: flex;
@@ -199,6 +200,7 @@ body main .restaurant1-menucard {
   position: relative;
   display: flex;
   flex-direction: column;
+  /******* CSS---- INDEX-------------- *******/
 }
 body main .restaurant1-menucard .restaurant1-menutitle {
   display: flex;
@@ -365,6 +367,10 @@ body main .restaurant1-menucard .commander button {
   text-decoration: none;
   transition: 0.5s;
   margin-bottom: 10px;
+}
+body main .restaurant1-menucard .commander button:hover {
+  opacity: 80%;
+  transition: 0.5s;
 }
 body main .localisation-restaurant {
   background-color: #EAEAEA;

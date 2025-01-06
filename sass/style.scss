@@ -174,13 +174,16 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    position:relative;
+    position: relative;
     z-index: 3;
-    display:flex;
+    display: flex;
 
-    nav {display:flex;
-    align-items: center;
-    padding-left:10px;
+/********---- CSS ------------- RESTAURANT 1-----------********/
+
+    nav {
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
     }
 
     img {
@@ -192,70 +195,70 @@ body {
   }
 
   main {
-    
+
     .images-resto1 {
       width: 100%;
-      z-index:-1;
+      z-index: -1;
       position: relative;
       overflow: visible;
       height: 200px;
     }
-    
 
-      .images-resto1 img{
+
+    .images-resto1 img {
       width: 100%;
       height: auto;
       position: relative;
       object-fit: cover;
-      
-      
-      }
-    
-    .restaurant1-menucard { 
+
+
+    }
+
+    .restaurant1-menucard {
       background-color: #F6F6F6;
       border-top-left-radius: 40px;
-      border-top-right-radius: 40px ;
-      z-index:1;
+      border-top-right-radius: 40px;
+      z-index: 1;
       position: relative;
-      display:flex;
+      display: flex;
       flex-direction: column;
 
       .restaurant1-menutitle {
-        display:flex;
+        display: flex;
         flex-direction: row;
         align-items: center;
         gap: 30px;
-        
 
-        h1{
+
+        h1 {
           font-family: $police-titre;
-          font-size:28px;
+          font-size: 28px;
         }
 
-        .coeur-logo img{
+        .coeur-logo img {
           width: 22px;
           height: 21px;
           margin-top: 22px;
-         
+
         }
       }
 
       .restaurant1-menu-entrées {
-       
-        padding-top:40px;
+
+        padding-top: 40px;
 
         .menu-entrées-title {
           font-family: $police-texte;
-          font-size:16px;
+          font-size: 16px;
           font-weight: 300;
-          margin-left:20px;
+          margin-left: 20px;
           padding-bottom: 5px;
-        
-        
-        
+
+
+
           .entrées-underline {
-          text-decoration: underline 3px $color-tertiary;
-          position:relative;
+            text-decoration: underline 3px $color-tertiary;
+            position: relative;
           }
         }
 
@@ -265,37 +268,37 @@ body {
           flex-direction: column;
           background-color: #F6F6F6;
           border-radius: 15px;
-          margin:10px;
-          padding:10px;
-          gap:5px;
-          
+          margin: 10px;
+          padding: 10px;
+          gap: 5px;
+
           box-shadow: 2px 2px 5px grey;
           position: relative;
 
           .entrées-title {
             font-family: $police-texte;
-            font-size : 18px;
-            font-weight: 500 ;
+            font-size: 18px;
+            font-weight: 500;
           }
 
           .position-sub-tarifs {
-            display : flex;
+            display: flex;
             flex-direction: row;
             justify-content: space-between;
 
             .tarifs {
-              font-weight:700;
+              font-weight: 700;
             }
-          
+
 
             .entrées-subtitle {
-            font-family: $police-texte;
-            font-size : 15px;
-            font-weight: 300;
+              font-family: $police-texte;
+              font-size: 15px;
+              font-weight: 300;
             }
 
-          
-            
+
+
           }
 
         }
@@ -303,20 +306,20 @@ body {
 
       .restaurant1-menu-plats {
 
-        padding-top:40px;
+        padding-top: 40px;
 
         .menu-plats-title {
           font-family: $police-texte;
-          font-size:16px;
+          font-size: 16px;
           font-weight: 300;
-          margin-left:20px;
+          margin-left: 20px;
           padding-bottom: 5px;
 
           .plats-underline {
             text-decoration: underline 3px $color-tertiary;
-            position:relative;
+            position: relative;
           }
-          
+
 
         }
 
@@ -326,54 +329,54 @@ body {
           flex-direction: column;
           background-color: #F6F6F6;
           border-radius: 15px;
-          margin:10px;
-          padding:10px;
-          gap:5px;
-          
+          margin: 10px;
+          padding: 10px;
+          gap: 5px;
+
           box-shadow: 2px 2px 5px grey;
           position: relative;
 
           .plats-title {
             font-family: $police-texte;
-            font-size : 18px;
-            font-weight: 500 ;
+            font-size: 18px;
+            font-weight: 500;
           }
 
           .position-sub-tarifs {
-            display : flex;
+            display: flex;
             flex-direction: row;
             justify-content: space-between;
 
             .tarifs {
-              font-weight:700;
+              font-weight: 700;
             }
-          
+
 
             .plats-subtitle {
-            font-family: $police-texte;
-            font-size : 15px;
-            font-weight: 300;
+              font-family: $police-texte;
+              font-size: 15px;
+              font-weight: 300;
             }
           }
         }
       }
 
       .restaurant1-menu-desserts {
-        padding-top :40px;
+        padding-top: 40px;
 
         .menu-desserts-title {
           font-family: $police-texte;
-          font-size:16px;
+          font-size: 16px;
           font-weight: 300;
-          margin-left:20px;
+          margin-left: 20px;
           padding-bottom: 5px;
 
           .dessert-underline {
             text-decoration: underline 3px $color-tertiary;
-            position:relative;
+            position: relative;
           }
 
-          
+
         }
 
         .desserts1 {
@@ -382,63 +385,65 @@ body {
           flex-direction: column;
           background-color: #F6F6F6;
           border-radius: 15px;
-          margin:10px;
-          padding:10px;
-          gap:5px;
-          
+          margin: 10px;
+          padding: 10px;
+          gap: 5px;
+
           box-shadow: 2px 2px 5px grey;
           position: relative;
 
           .desserts-title {
             font-family: $police-texte;
-            font-size : 18px;
-            font-weight: 500 ;
+            font-size: 18px;
+            font-weight: 500;
           }
 
           .position-sub-tarifs {
-            display : flex;
+            display: flex;
             flex-direction: row;
             justify-content: space-between;
-          
+
             .tarifs {
-              font-weight:700;
+              font-weight: 700;
             }
-          
+
 
             .desserts-subtitle {
-            font-family: $police-texte;
-            font-size : 15px;
-            font-weight: 300;
+              font-family: $police-texte;
+              font-size: 15px;
+              font-weight: 300;
             }
           }
         }
       }
-      .commander{
+
+      .commander {
         display: flex;
-      align-items: center;
-      justify-content: center;
-      padding:30px;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+
         button {
-      border-radius: 50px;
-      background: linear-gradient(#FF79DA,#9356DC);
-      color: white;
-      font-family: $police-texte;
-      font-size:16px;
-      border:none;
-      padding:15px 40px;
-      cursor:pointer;
-      text-decoration: none;
-      transition: 0.5s;
-      margin-bottom:10px;
+          border-radius: 50px;
+          background: linear-gradient(#FF79DA, #9356DC);
+          color: white;
+          font-family: $police-texte;
+          font-size: 16px;
+          border: none;
+          padding: 15px 40px;
+          cursor: pointer;
+          text-decoration: none;
+          transition: 0.5s;
+          margin-bottom: 10px;
+        }
+
+        button:hover {
+          opacity: 80%; 
+          transition: 0.5s;
+          }
+        }
       
-      }
-      }
-        
-
-
-      
-
-    
+/******* CSS---- INDEX-------------- *******/
     }
 
     .localisation-restaurant {
@@ -447,7 +452,7 @@ body {
       box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
       position: relative;
       z-index: 2;
-      
+
       form {
         display: flex;
         flex-direction: row;
@@ -460,21 +465,21 @@ body {
         border: none;
         background-color: #EAEAEA;
         font-weight: bold;
-        font-size:16px;
+        font-size: 16px;
         font-family: $police-texte;
-        color:black;
+        color: black;
         max-width: 130px;
         text-align: center;
-        
-  
+
+
       }
 
 
-      
 
-      
+
+
     }
-  
+
 
 
     .presentation {
@@ -486,7 +491,7 @@ body {
       padding-top: 50px;
       align-items: center;
       text-align: center;
-        
+
       h1 {
         font-family: $police-texte;
         font-weight: bold;
@@ -496,32 +501,32 @@ body {
 
       p {
         font-family: $police-texte;
-        font-size:18px;
-        padding:20px;
-        font-weight:300;
-        color:#353535;
+        font-size: 18px;
+        padding: 20px;
+        font-weight: 300;
+        color: #353535;
       }
-    
+
 
       a {
         border-radius: 50px;
-        background: linear-gradient(#FF79DA,#9356DC);
+        background: linear-gradient(#FF79DA, #9356DC);
         color: white;
         font-family: $police-texte;
-        font-size:16px;
-        border:none;
-        padding:15px 20px;
-        cursor:pointer;
+        font-size: 16px;
+        border: none;
+        padding: 15px 20px;
+        cursor: pointer;
         margin-bottom: 40px;
         text-decoration: none;
         transition: 0.5s;
-        
-      
+
+
       }
 
       a:hover {
-       opacity: 80%; 
-       transition: 0.5s;
+        opacity: 80%;
+        transition: 0.5s;
       }
     }
 
@@ -530,101 +535,101 @@ body {
       font-size: 24px;
       font-weight: bold;
       padding-top: 40px;
-      padding-left:20px;
+      padding-left: 20px;
       padding-bottom: 20px;
-      
-    
+
+
     }
 
     .fonctionnement {
-      display:flex; 
+      display: flex;
       flex-direction: column;
       padding-bottom: 20px;
-    
-  
+
+
       .choisissez-un-restaurant {
-      display: flex;
-      flex-direction: row;
-      background-color: #F6F6F6;
-      border-radius: 15px;
-      margin:25px;
-      padding:20px;
-      box-shadow: 2px 2px 5px grey;
-      position: relative;
-      
-
-        .fonctionnement-number1{
-          border-radius: 10px;
-          width: 20px;
-          height: 20px;
-          background-color: $color-primary;
-          font-size:15px;
-          position: absolute;
-          display:flex;
-          justify-content: center;
-          align-items: center;
-          left: -10px;
-          color:white;
-          
-        }
-
-        .telephone-logo{
-          padding-left: 10px;
-
-        }
-        
-        .choix-restaurant {
-        
-          font-family: $police-texte;
-          font-weight: bold;
-          margin-left: 40px;
-          font-size:16px;
-          
-
-
-        }
-      }
-      
-      .composez-votre-menu{
         display: flex;
         flex-direction: row;
         background-color: #F6F6F6;
         border-radius: 15px;
-        margin:25px;
-        padding:20px;
+        margin: 25px;
+        padding: 20px;
         box-shadow: 2px 2px 5px grey;
         position: relative;
-        
-  
-        .fonctionnement-number2{
+
+
+        .fonctionnement-number1 {
           border-radius: 10px;
           width: 20px;
           height: 20px;
           background-color: $color-primary;
-          font-size:15px;
+          font-size: 15px;
           position: absolute;
-          display:flex;
+          display: flex;
           justify-content: center;
           align-items: center;
           left: -10px;
-          color:white;
-            
+          color: white;
+
         }
-  
-        .menu-logo{
+
+        .telephone-logo {
           padding-left: 10px;
-  
+
         }
-          
-        .composition-menu {
-          
+
+        .choix-restaurant {
+
           font-family: $police-texte;
           font-weight: bold;
           margin-left: 40px;
-          font-size:16px;
-            
-  
-  
+          font-size: 16px;
+
+
+
+        }
+      }
+
+      .composez-votre-menu {
+        display: flex;
+        flex-direction: row;
+        background-color: #F6F6F6;
+        border-radius: 15px;
+        margin: 25px;
+        padding: 20px;
+        box-shadow: 2px 2px 5px grey;
+        position: relative;
+
+
+        .fonctionnement-number2 {
+          border-radius: 10px;
+          width: 20px;
+          height: 20px;
+          background-color: $color-primary;
+          font-size: 15px;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: -10px;
+          color: white;
+
+        }
+
+        .menu-logo {
+          padding-left: 10px;
+
+        }
+
+        .composition-menu {
+
+          font-family: $police-texte;
+          font-weight: bold;
+          margin-left: 40px;
+          font-size: 16px;
+
+
+
         }
       }
 
@@ -634,130 +639,131 @@ body {
         flex-direction: row;
         background-color: #F6F6F6;
         border-radius: 15px;
-        margin:25px;
-        padding:20px;
+        margin: 25px;
+        padding: 20px;
         box-shadow: 2px 2px 5px grey;
         position: relative;
-        
-  
-        .fonctionnement-number3{
+
+
+        .fonctionnement-number3 {
           border-radius: 10px;
           width: 20px;
           height: 20px;
           background-color: $color-primary;
-          font-size:15px;
+          font-size: 15px;
           position: absolute;
-          display:flex;
+          display: flex;
           justify-content: center;
           align-items: center;
           left: -10px;
-          color:white;  
-          }
-  
-        .resto-logo{
-          padding-left: 10px;
-  
+          color: white;
         }
-          
+
+        .resto-logo {
+          padding-left: 10px;
+
+        }
+
         .deguster-restaurant {
-          
+
           font-family: $police-texte;
           font-weight: bold;
           margin-left: 40px;
-          font-size:16px;
-            
-  
-  
+          font-size: 16px;
+
+
+
         }
       }
     }
-  
+
     .restaurant_title {
       font-family: $police-texte;
-      font-size:20px;
+      font-size: 20px;
       font-weight: bold;
-      margin-left:10px;
-      padding-top:10px;
-      padding-bottom:10px;
+      margin-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
 
-    .restaurants{
-      display:flex;
+    .restaurants {
+      display: flex;
       flex-direction: column;
-      padding-top:20px;
+      padding-top: 20px;
       background-color: #F6F6F6;
-    
 
 
 
-      .restaurant-card { 
-        
+
+      .restaurant-card {
+
         a {
           display: flex;
           justify-content: center;
           text-decoration: none;
           padding-bottom: 20px;
-          
+
           .card-resto {
-          width: 90%;
-          position:relative;
-          justify-content: center;
-          align-items: center;
-          background-color: white;
-          border-radius:20px;
-          
+            width: 90%;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 20px;
+
 
           }
+
           .card-resto-img {
-          width: 100%;
-          height: 231px;
-          border-top-left-radius: 20px;
-          border-top-right-radius: 20px;
-          object-fit: cover;
+            width: 100%;
+            height: 231px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            object-fit: cover;
           }
 
           .card-resto-content {
             display: flex;
             flex-direction: column;
             position: relative;
-            
-            
-            .card-title{
+
+
+            .card-title {
               font-family: $police-texte;
-              color:black;
+              color: black;
               font-weight: bold;
-              margin: 10px; 
-              font-size: 18px;          
+              margin: 10px;
+              font-size: 18px;
             }
 
-            .card-subtitle{
+            .card-subtitle {
               font-family: $police-texte;
-              color:black;
+              color: black;
               margin: 10px;
               font-size: 17px;
-              font-weight:300;
+              font-weight: 300;
             }
 
           }
 
-          .nouveau-logo{
+          .nouveau-logo {
 
-            .text-nouveau-logo{
+            .text-nouveau-logo {
 
-                span {
-              background-color: $color-tertiary;
-              padding-left:15px;
-              padding-right:15px;
-              padding-top:10px;
-              padding-bottom:10px;
-              font-family: $police-texte;
-              font-size:14px;
-              color:#008766;
-              border:none;
-              border-radius: 5px;
-              position: absolute;
-              top:20px;
-              right:20px;
+              span {
+                background-color: $color-tertiary;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-family: $police-texte;
+                font-size: 14px;
+                color: #008766;
+                border: none;
+                border-radius: 5px;
+                position: absolute;
+                top: 20px;
+                right: 20px;
               }
             }
           }
@@ -765,89 +771,89 @@ body {
           .coeur-logo {
             position: absolute;
             right: 30px;
-            top : 270px;
+            top: 270px;
             transition-duration: 5s;
-            
+
           }
 
           .coeur-logo img:hover {
             transition-duration: 5s;
             background: linear-gradient(to bottom, #FF79DA, #9356DC);
-        
 
-            
+
+
           }
         }
       }
 
-    
+
 
 
 
     }
   }
 
-  footer { 
+  footer {
     background-color: #353535;
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-    padding-top:20px;
+    padding-top: 20px;
 
 
-    .ohmyfood-logo-blanc{
+    .ohmyfood-logo-blanc {
       font-family: $police-titre;
       color: white;
       padding-left: 20px;
-      font-size:18px;
+      font-size: 18px;
       margin-bottom: 20px;
     }
 
-    .proposer-un-restaurant{
-      display:flex;
+    .proposer-un-restaurant {
+      display: flex;
       flex-direction: row;
-      padding-left:20px;
+      padding-left: 20px;
       padding-bottom: 20px;
-      gap:10px;
-      color:white;
-      font-family:$police-texte;
+      gap: 10px;
+      color: white;
+      font-family: $police-texte;
       font-size: 16px;
       align-items: center;
     }
 
-    .devenir-partenaire{
-      display:flex;
+    .devenir-partenaire {
+      display: flex;
       flex-direction: row;
-      padding-left:20px;
+      padding-left: 20px;
       padding-bottom: 20px;
-      gap:10px;
-      color:white;
+      gap: 10px;
+      color: white;
       font-family: $police-texte;
-      font-size:16px;
-      align-items:center;
+      font-size: 16px;
+      align-items: center;
 
       img {
         width: 14px;
       }
     }
-      
-      
 
-    .mentions{
+
+
+    .mentions {
       font-family: $police-texte;
-      font-size:16px;
+      font-size: 16px;
       color: white;
-      padding-left:20px;
+      padding-left: 20px;
       padding-bottom: 20px;
 
     }
 
     a {
       font-family: $police-texte;
-      color:white;
-      font-size:16px;
+      color: white;
+      font-size: 16px;
       padding-left: 20px;
-      padding-bottom:20px;
+      padding-bottom: 20px;
       text-decoration: none;
       align-items: center;
     }
@@ -855,49 +861,48 @@ body {
   }
 }
 
-@media (min-width : 600px) and (max-width : 900px) {
-
-}
+@media (min-width : 600px) and (max-width : 900px) {}
 
 @media (min-width:900px) {
 
-  body { 
+  body {
 
     main {
-      .fonctionnement-title{
-        margin-left:20px;
+      .fonctionnement-title {
+        margin-left: 20px;
       }
-      .fonctionnement{
-        display:flex;
+
+      .fonctionnement {
+        display: flex;
         flex-direction: row;
-        margin-left:20px;
+        margin-left: 20px;
 
-        .choisissez-un-restaurant{
+        .choisissez-un-restaurant {
           padding-right: 60px;
         }
 
-        .composez-votre-menu{
+        .composez-votre-menu {
           padding-right: 60px;
         }
 
-        .degustez-au-restaurant{
+        .degustez-au-restaurant {
           padding-right: 60px;
         }
       }
 
-      .restaurants{
-        display:grid;
+      .restaurants {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap :30px;
-    
+        gap: 30px;
+
       }
-      
+
     }
 
     footer {
-      flex-direction: row;    
+      flex-direction: row;
       align-items: center;
-      position:relative;
+      position: relative;
       justify-content: flex-end;
 
 
@@ -905,40 +910,40 @@ body {
         position: absolute;
         bottom: 40px;
         right: 20px;
-        font-size: 22px; 
+        font-size: 22px;
         margin: 0;
-        
+
       }
-      
-      .proposer-un-restaurant{
+
+      .proposer-un-restaurant {
         display: flex;
         align-items: center;
-        padding-top : 40px;
-    
+        padding-top: 40px;
+
       }
-      
-      .devenir-partenaire{
+
+      .devenir-partenaire {
         display: flex;
         align-items: center;
-        padding-top : 40px;
+        padding-top: 40px;
       }
-      
-      .mentions{
+
+      .mentions {
         display: flex;
         align-items: center;
-        padding-top : 40px;
+        padding-top: 40px;
       }
-      
+
       a {
         display: flex;
         align-items: center;
-        padding-right:200px;
-        padding-top : 40px;
-   
-      
+        padding-right: 200px;
+        padding-top: 40px;
+
+
       }
-    
-      
+
+
     }
   }
 }
