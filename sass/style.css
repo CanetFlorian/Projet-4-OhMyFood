@@ -201,6 +201,7 @@ body main .restaurant1-menucard {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   /******* CSS---- INDEX-------------- *******/
 }
 body main .restaurant1-menucard .restaurant1-menutitle {
@@ -221,8 +222,8 @@ body main .restaurant1-menucard .restaurant1-menutitle .coeur-logo img {
   margin-top: 42px;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées {
-  width: 100%;
   padding-top: 40px;
+  width: 100%;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .menu-entrées-title {
   font-family: "Roboto", sans-serif;
@@ -251,6 +252,10 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 .entrées-
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 .position-sub-tarifs {
   display: flex;
@@ -266,6 +271,10 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 .position-
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 body main .restaurant1-menucard .restaurant1-menu-plats {
   width: 100%;
@@ -298,6 +307,10 @@ body main .restaurant1-menucard .restaurant1-menu-plats .plats1 .plats-title {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 body main .restaurant1-menucard .restaurant1-menu-plats .plats1 .position-sub-tarifs {
   display: flex;
@@ -313,6 +326,10 @@ body main .restaurant1-menucard .restaurant1-menu-plats .plats1 .position-sub-ta
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts {
   padding-top: 40px;
@@ -345,6 +362,10 @@ body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 .desserts-
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 .position-sub-tarifs {
   display: flex;
@@ -360,6 +381,10 @@ body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 .position-
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 body main .restaurant1-menucard .commander {
   display: flex;
