@@ -222,6 +222,7 @@ body {
       position: relative;
       display: flex;
       flex-direction: column;
+      align-items: center;
 
       .restaurant1-menutitle {
         display: flex;
@@ -233,18 +234,21 @@ body {
         h1 {
           font-family: $police-titre;
           font-size: 28px;
+          font-weight: 400;
+          margin-top:40px;
+          
         }
 
         .coeur-logo img {
           width: 22px;
           height: 21px;
-          margin-top: 22px;
+          margin-top: 42px;
 
         }
       }
 
       .restaurant1-menu-entrées {
-
+        width: 100%;
         padding-top: 40px;
 
         .menu-entrées-title {
@@ -252,7 +256,7 @@ body {
           font-size: 16px;
           font-weight: 300;
           margin-left: 20px;
-          padding-bottom: 5px;
+          padding-bottom: 10px;
 
 
 
@@ -268,8 +272,8 @@ body {
           flex-direction: column;
           background-color: #F6F6F6;
           border-radius: 15px;
-          margin: 10px;
-          padding: 10px;
+          margin: 16px;
+          padding: 16px;
           gap: 5px;
 
           box-shadow: 2px 2px 5px grey;
@@ -288,6 +292,8 @@ body {
 
             .tarifs {
               font-weight: 700;
+              font-family: $police-texte;
+              color:#353535;
             }
 
 
@@ -305,6 +311,7 @@ body {
       }
 
       .restaurant1-menu-plats {
+        width: 100%;
 
         padding-top: 40px;
 
@@ -313,7 +320,7 @@ body {
           font-size: 16px;
           font-weight: 300;
           margin-left: 20px;
-          padding-bottom: 5px;
+          padding-bottom: 10px;
 
           .plats-underline {
             text-decoration: underline 3px $color-tertiary;
@@ -329,8 +336,8 @@ body {
           flex-direction: column;
           background-color: #F6F6F6;
           border-radius: 15px;
-          margin: 10px;
-          padding: 10px;
+          margin: 16px;
+          padding: 16px;
           gap: 5px;
 
           box-shadow: 2px 2px 5px grey;
@@ -349,6 +356,8 @@ body {
 
             .tarifs {
               font-weight: 700;
+              font-family: $police-texte;
+              color:#353535;
             }
 
 
@@ -363,13 +372,14 @@ body {
 
       .restaurant1-menu-desserts {
         padding-top: 40px;
+        width: 100%;
 
         .menu-desserts-title {
           font-family: $police-texte;
           font-size: 16px;
           font-weight: 300;
           margin-left: 20px;
-          padding-bottom: 5px;
+          padding-bottom: 10px;
 
           .dessert-underline {
             text-decoration: underline 3px $color-tertiary;
@@ -385,8 +395,8 @@ body {
           flex-direction: column;
           background-color: #F6F6F6;
           border-radius: 15px;
-          margin: 10px;
-          padding: 10px;
+          margin: 16px;
+          padding: 16px;
           gap: 5px;
 
           box-shadow: 2px 2px 5px grey;
@@ -405,6 +415,8 @@ body {
 
             .tarifs {
               font-weight: 700;
+              font-family: $police-texte;
+              color:#353535;
             }
 
 
@@ -448,7 +460,7 @@ body {
 
     .localisation-restaurant {
       background-color: #EAEAEA;
-      padding: 20px;
+      padding: 12px;
       box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
       position: relative;
       z-index: 2;
@@ -459,6 +471,16 @@ body {
         margin: auto;
         gap: 15px;
         justify-content: center;
+      }
+
+      .localisation-logo {
+        display:flex;
+        align-items: center;
+      }
+
+      .localisation-logo img{
+        width: 12px;
+        height: 16px;
       }
 
       input {
@@ -489,7 +511,6 @@ body {
       background-color: #F6F6F6;
       position: relative;
       z-index: 1;
-      padding-top: 50px;
       align-items: center;
       text-align: center;
 
@@ -498,12 +519,14 @@ body {
         font-weight: bold;
         font-size: 24px;
         display: flex;
+        padding-top:40px;
       }
 
       p {
         font-family: $police-texte;
         font-size: 18px;
-        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 30px;
         font-weight: 300;
         color: #353535;
       }
@@ -518,7 +541,7 @@ body {
         border: none;
         padding: 15px 20px;
         cursor: pointer;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         text-decoration: none;
         transition: 0.5s;
 
@@ -531,7 +554,7 @@ body {
       }
     }
 
-    h1 {
+    .fonctionnement-title {
       font-family: $police-texte;
       font-size: 24px;
       font-weight: bold;
@@ -682,9 +705,11 @@ body {
       font-family: $police-texte;
       font-size: 20px;
       font-weight: bold;
-      margin-left: 10px;
+      padding-left: 10px;
       padding-top: 10px;
       padding-bottom: 10px;
+      background-color: #F6F6F6;
+      
     }
 
     .restaurants {
@@ -706,6 +731,7 @@ body {
 
           .card-resto {
             width: 90%;
+            height: 250px;
             position: relative;
             justify-content: center;
             align-items: center;
@@ -717,7 +743,7 @@ body {
 
           .card-resto-img {
             width: 100%;
-            height: 231px;
+            height: 175px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             object-fit: cover;
@@ -733,14 +759,16 @@ body {
               font-family: $police-texte;
               color: black;
               font-weight: bold;
-              margin: 10px;
+              margin-top: 15px;
+              margin-left: 15px;
               font-size: 18px;
             }
 
             .card-subtitle {
               font-family: $police-texte;
               color: black;
-              margin: 10px;
+              margin-top:5px;
+              margin-left:15px;
               font-size: 17px;
               font-weight: 300;
             }
@@ -753,15 +781,16 @@ body {
 
               span {
                 background-color: $color-tertiary;
-                padding-left: 15px;
-                padding-right: 15px;
-                padding-top: 10px;
-                padding-bottom: 10px;
+                padding-left: 12px;
+                padding-right: 12px;
+                padding-top: 7px;
+                padding-bottom: 7px;
                 font-family: $police-texte;
                 font-size: 14px;
+                font-weight: 500;
                 color: #008766;
                 border: none;
-                border-radius: 5px;
+                border-radius: 2px;
                 position: absolute;
                 top: 20px;
                 right: 20px;
@@ -771,10 +800,15 @@ body {
 
           .coeur-logo {
             position: absolute;
-            right: 30px;
-            top: 270px;
+           right:10px;
+           top:200px;
             transition-duration: 5s;
 
+          }
+
+          .coeur-logo img {
+            width: 22px;
+            height: 21px;
           }
 
           .coeur-logo img:hover {
@@ -799,7 +833,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
 
 
     .ohmyfood-logo-blanc {
@@ -814,7 +848,7 @@ body {
       display: flex;
       flex-direction: row;
       padding-left: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       gap: 10px;
       color: white;
       font-family: $police-texte;
@@ -826,7 +860,7 @@ body {
       display: flex;
       flex-direction: row;
       padding-left: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       gap: 10px;
       color: white;
       font-family: $police-texte;
@@ -845,7 +879,7 @@ body {
       font-size: 16px;
       color: white;
       padding-left: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
 
     }
 
@@ -866,9 +900,69 @@ body {
 
 @media (min-width:900px) {
 
+
+
   body {
 
-    main {
+    header {
+      box-shadow: none;
+
+    
+      }
+    
+
+    main { 
+
+      .localisation-restaurant {
+        box-shadow: none;
+      }
+
+      .presentation {
+
+        h1{
+          font-size: 40px;
+        }
+
+        .find-restaurant  {
+          margin-bottom: 25px;
+        }
+
+    
+      }
+
+      .restaurant1-menucard{
+        margin-top:150px;
+        width: 1050px;
+        margin-left:auto;
+        margin-right:auto;
+        
+        
+       
+
+        .restaurant1-menu-entrées {
+          width: 634px;
+        }
+
+        .restaurant1-menu-plats {
+          width: 634px;
+        }
+
+        .restaurant1-menu-desserts {
+          width: 634px;
+        }
+      }
+
+      .images-resto1 img {
+        height: 383px;
+      }
+
+      .padding-fonctionnement {
+        padding-left:180px;
+        padding-right:180px;
+
+        
+      }
+      
       .fonctionnement-title {
         margin-left: 20px;
       }
@@ -876,10 +970,12 @@ body {
       .fonctionnement {
         display: flex;
         flex-direction: row;
+        
         margin-left: 20px;
 
         .choisissez-un-restaurant {
           padding-right: 60px;
+          
         }
 
         .composez-votre-menu {
@@ -891,9 +987,16 @@ body {
         }
       }
 
-      .restaurants {
+      .restaurant_title {
+        padding-left: 110px;
+       
+      }
+
+      .restaurants{
+        padding-left:180px;
+        padding-right:180px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
         gap: 30px;
 
       }
@@ -935,11 +1038,11 @@ body {
         padding-top: 40px;
       }
 
-      a {
+      .contact a {
         display: flex;
         align-items: center;
-        padding-right: 200px;
-        padding-top: 40px;
+        padding-right: 250px;
+        padding-top: 50px;
 
 
       }

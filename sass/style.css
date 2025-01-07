@@ -200,6 +200,7 @@ body main .restaurant1-menucard {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   /******* CSS---- INDEX-------------- *******/
 }
 body main .restaurant1-menucard .restaurant1-menutitle {
@@ -211,13 +212,16 @@ body main .restaurant1-menucard .restaurant1-menutitle {
 body main .restaurant1-menucard .restaurant1-menutitle h1 {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
+  font-weight: 400;
+  margin-top: 40px;
 }
 body main .restaurant1-menucard .restaurant1-menutitle .coeur-logo img {
   width: 22px;
   height: 21px;
-  margin-top: 22px;
+  margin-top: 42px;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées {
+  width: 100%;
   padding-top: 40px;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .menu-entrées-title {
@@ -225,7 +229,7 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .menu-entrées-title 
   font-size: 16px;
   font-weight: 300;
   margin-left: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .menu-entrées-title .entrées-underline {
   -webkit-text-decoration: underline 3px #99E2D0;
@@ -237,8 +241,8 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 {
   flex-direction: column;
   background-color: #F6F6F6;
   border-radius: 15px;
-  margin: 10px;
-  padding: 10px;
+  margin: 16px;
+  padding: 16px;
   gap: 5px;
   box-shadow: 2px 2px 5px grey;
   position: relative;
@@ -255,6 +259,8 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 .position-
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 .position-sub-tarifs .tarifs {
   font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #353535;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 .position-sub-tarifs .entrées-subtitle {
   font-family: "Roboto", sans-serif;
@@ -262,6 +268,7 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 .position-
   font-weight: 300;
 }
 body main .restaurant1-menucard .restaurant1-menu-plats {
+  width: 100%;
   padding-top: 40px;
 }
 body main .restaurant1-menucard .restaurant1-menu-plats .menu-plats-title {
@@ -269,7 +276,7 @@ body main .restaurant1-menucard .restaurant1-menu-plats .menu-plats-title {
   font-size: 16px;
   font-weight: 300;
   margin-left: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 body main .restaurant1-menucard .restaurant1-menu-plats .menu-plats-title .plats-underline {
   -webkit-text-decoration: underline 3px #99E2D0;
@@ -281,8 +288,8 @@ body main .restaurant1-menucard .restaurant1-menu-plats .plats1 {
   flex-direction: column;
   background-color: #F6F6F6;
   border-radius: 15px;
-  margin: 10px;
-  padding: 10px;
+  margin: 16px;
+  padding: 16px;
   gap: 5px;
   box-shadow: 2px 2px 5px grey;
   position: relative;
@@ -299,6 +306,8 @@ body main .restaurant1-menucard .restaurant1-menu-plats .plats1 .position-sub-ta
 }
 body main .restaurant1-menucard .restaurant1-menu-plats .plats1 .position-sub-tarifs .tarifs {
   font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #353535;
 }
 body main .restaurant1-menucard .restaurant1-menu-plats .plats1 .position-sub-tarifs .plats-subtitle {
   font-family: "Roboto", sans-serif;
@@ -307,13 +316,14 @@ body main .restaurant1-menucard .restaurant1-menu-plats .plats1 .position-sub-ta
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts {
   padding-top: 40px;
+  width: 100%;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .menu-desserts-title {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
   margin-left: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .menu-desserts-title .dessert-underline {
   -webkit-text-decoration: underline 3px #99E2D0;
@@ -325,8 +335,8 @@ body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 {
   flex-direction: column;
   background-color: #F6F6F6;
   border-radius: 15px;
-  margin: 10px;
-  padding: 10px;
+  margin: 16px;
+  padding: 16px;
   gap: 5px;
   box-shadow: 2px 2px 5px grey;
   position: relative;
@@ -343,6 +353,8 @@ body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 .position-
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 .position-sub-tarifs .tarifs {
   font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #353535;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 .position-sub-tarifs .desserts-subtitle {
   font-family: "Roboto", sans-serif;
@@ -374,7 +386,7 @@ body main .restaurant1-menucard .commander button:hover {
 }
 body main .localisation-restaurant {
   background-color: #EAEAEA;
-  padding: 20px;
+  padding: 12px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 2;
@@ -385,6 +397,14 @@ body main .localisation-restaurant form {
   margin: auto;
   gap: 15px;
   justify-content: center;
+}
+body main .localisation-restaurant .localisation-logo {
+  display: flex;
+  align-items: center;
+}
+body main .localisation-restaurant .localisation-logo img {
+  width: 12px;
+  height: 16px;
 }
 body main .localisation-restaurant input {
   border: none;
@@ -403,7 +423,6 @@ body main .presentation {
   background-color: #F6F6F6;
   position: relative;
   z-index: 1;
-  padding-top: 50px;
   align-items: center;
   text-align: center;
 }
@@ -412,11 +431,13 @@ body main .presentation h1 {
   font-weight: bold;
   font-size: 24px;
   display: flex;
+  padding-top: 40px;
 }
 body main .presentation p {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
   font-weight: 300;
   color: #353535;
 }
@@ -429,7 +450,7 @@ body main .presentation a {
   border: none;
   padding: 15px 20px;
   cursor: pointer;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -437,7 +458,7 @@ body main .presentation a:hover {
   opacity: 80%;
   transition: 0.5s;
 }
-body main h1 {
+body main .fonctionnement-title {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: bold;
@@ -550,9 +571,10 @@ body main .restaurant_title {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 10px;
+  padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #F6F6F6;
 }
 body main .restaurants {
   display: flex;
@@ -568,6 +590,7 @@ body main .restaurants .restaurant-card a {
 }
 body main .restaurants .restaurant-card a .card-resto {
   width: 90%;
+  height: 250px;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -576,7 +599,7 @@ body main .restaurants .restaurant-card a .card-resto {
 }
 body main .restaurants .restaurant-card a .card-resto-img {
   width: 100%;
-  height: 231px;
+  height: 175px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   -o-object-fit: cover;
@@ -591,36 +614,43 @@ body main .restaurants .restaurant-card a .card-resto-content .card-title {
   font-family: "Roboto", sans-serif;
   color: black;
   font-weight: bold;
-  margin: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
   font-size: 18px;
 }
 body main .restaurants .restaurant-card a .card-resto-content .card-subtitle {
   font-family: "Roboto", sans-serif;
   color: black;
-  margin: 10px;
+  margin-top: 5px;
+  margin-left: 15px;
   font-size: 17px;
   font-weight: 300;
 }
 body main .restaurants .restaurant-card a .nouveau-logo .text-nouveau-logo span {
   background-color: #99E2D0;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  font-weight: 500;
   color: #008766;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   position: absolute;
   top: 20px;
   right: 20px;
 }
 body main .restaurants .restaurant-card a .coeur-logo {
   position: absolute;
-  right: 30px;
-  top: 270px;
+  right: 10px;
+  top: 200px;
   transition-duration: 5s;
+}
+body main .restaurants .restaurant-card a .coeur-logo img {
+  width: 22px;
+  height: 21px;
 }
 body main .restaurants .restaurant-card a .coeur-logo img:hover {
   transition-duration: 5s;
@@ -631,7 +661,7 @@ body footer {
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 body footer .ohmyfood-logo-blanc {
   font-family: "Shrikhand", cursive;
@@ -644,7 +674,7 @@ body footer .proposer-un-restaurant {
   display: flex;
   flex-direction: row;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   gap: 10px;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -655,7 +685,7 @@ body footer .devenir-partenaire {
   display: flex;
   flex-direction: row;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   gap: 10px;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -670,7 +700,7 @@ body footer .mentions {
   font-size: 16px;
   color: white;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 body footer a {
   font-family: "Roboto", sans-serif;
@@ -683,6 +713,40 @@ body footer a {
 }
 
 @media (min-width: 900px) {
+  body header {
+    box-shadow: none;
+  }
+  body main .localisation-restaurant {
+    box-shadow: none;
+  }
+  body main .presentation h1 {
+    font-size: 40px;
+  }
+  body main .presentation .find-restaurant {
+    margin-bottom: 25px;
+  }
+  body main .restaurant1-menucard {
+    margin-top: 150px;
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body main .restaurant1-menucard .restaurant1-menu-entrées {
+    width: 634px;
+  }
+  body main .restaurant1-menucard .restaurant1-menu-plats {
+    width: 634px;
+  }
+  body main .restaurant1-menucard .restaurant1-menu-desserts {
+    width: 634px;
+  }
+  body main .images-resto1 img {
+    height: 383px;
+  }
+  body main .padding-fonctionnement {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
   body main .fonctionnement-title {
     margin-left: 20px;
   }
@@ -700,9 +764,14 @@ body footer a {
   body main .fonctionnement .degustez-au-restaurant {
     padding-right: 60px;
   }
+  body main .restaurant_title {
+    padding-left: 110px;
+  }
   body main .restaurants {
+    padding-left: 180px;
+    padding-right: 180px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     gap: 30px;
   }
   body footer {
@@ -733,10 +802,10 @@ body footer a {
     align-items: center;
     padding-top: 40px;
   }
-  body footer a {
+  body footer .contact a {
     display: flex;
     align-items: center;
-    padding-right: 200px;
-    padding-top: 40px;
+    padding-right: 250px;
+    padding-top: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
