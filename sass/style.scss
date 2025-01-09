@@ -5,6 +5,7 @@ $color-tertiary: #99E2D0;
 $police-titre: "Shrikhand", cursive;
 $police-texte: "Roboto", sans-serif;
 
+$clr-btn : linear-gradient(#FF79DA, #9356DC);
 /* ************************************* Reset ***************/
 html,
 body,
@@ -252,7 +253,7 @@ body {
           font-size: 22px;
           color:transparent;
           -webkit-text-stroke: 1px black ;
-          transition: color 0.5s ease;
+          transition: color 1.5s ease,-webkit-text-stroke 1.5s ease;
           
         }
 
@@ -480,7 +481,7 @@ body {
         justify-content: center;
         padding: 30px;
 
-        button {
+        .btnresto {
           border-radius: 50px;
           background: linear-gradient(#FF79DA, #9356DC);
           color: white;
@@ -490,15 +491,18 @@ body {
           padding: 15px 40px;
           cursor: pointer;
           text-decoration: none;
-          transition: 0.5s;
           margin-bottom: 10px;
-        }
+          z-index: 1;
+          position: relative;
+          overflow: hidden;
+          transition: opacity 1s ease;
 
-        button:hover {
-          opacity: 80%; 
-          transition: 0.5s;
+          &:hover {
+            opacity: 0.8;
+            } 
           }
         }
+      }
       
 /******* CSS---- INDEX-------------- *******/
     }
@@ -588,14 +592,14 @@ body {
         cursor: pointer;
         margin-bottom: 60px;
         text-decoration: none;
-        transition: 0.5s;
+        transition: opacity 1s ease;
 
 
       }
 
       a:hover {
-        opacity: 80%;
-        transition: 0.5s;
+        opacity: 0.8;
+        
       }
     }
 
@@ -849,19 +853,20 @@ body {
             position: absolute;
            right:10px;
            top:200px;
-           transition-duration: 5s;
+           
+           
 
-          }
+          
 
-          i {
+            i {
             font-size: 22px;
             color:transparent;
             -webkit-text-stroke: 1px black ;
-            transition: color 0.5s ease;
+            transition: color 1s ease-in-out, -webkit-text-stroke 1s ease-in-out,  
             
-          }
+            }
 
-          i:hover {
+            i:hover {
             color: transparent;
             background: linear-gradient(to bottom, #FF79DA, #9356DC);
             -webkit-background-clip: text;
@@ -869,6 +874,7 @@ body {
 
 
 
+            }
           }
         }
       }
@@ -945,7 +951,7 @@ body {
     }
 
   }
-}
+
 
 @media (min-width : 600px) and (max-width : 900px) {}
 
