@@ -177,7 +177,8 @@ body {
     position: relative;
     z-index: 3;
     display: flex;
-
+  
+   
 /********---- CSS ------------- RESTAURANT 1-----------********/
 
     nav {
@@ -240,10 +241,28 @@ body {
           
         }
 
-        .coeur-logo img {
+        .coeur-logo  {
           width: 22px;
           height: 21px;
           margin-top: 42px;
+
+        }
+
+        i {
+          font-size: 22px;
+          color:transparent;
+          -webkit-text-stroke: 1px black ;
+          transition: color 0.5s ease;
+          
+        }
+
+        i:hover {
+          color: transparent;
+          background: linear-gradient(to bottom, #FF79DA, #9356DC);
+          -webkit-background-clip: text;
+          -webkit-text-stroke: 1px transparent;
+
+
 
         }
       }
@@ -732,8 +751,7 @@ body {
       font-size: 20px;
       font-weight: bold;
       padding-left: 10px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 30px;
       background-color: #F6F6F6;
       
     }
@@ -763,6 +781,7 @@ body {
             align-items: center;
             background-color: white;
             border-radius: 20px;
+          
 
 
           }
@@ -770,9 +789,11 @@ body {
           .card-resto-img {
             width: 100%;
             height: 175px;
+            object-fit: cover;
+            object-position: center center;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
-            object-fit: cover;
+            
           }
 
           .card-resto-content {
@@ -828,26 +849,30 @@ body {
             position: absolute;
            right:10px;
            top:200px;
-            transition-duration: 5s;
+           transition-duration: 5s;
 
           }
 
-          .coeur-logo img {
-            width: 22px;
-            height: 21px;
+          i {
+            font-size: 22px;
+            color:transparent;
+            -webkit-text-stroke: 1px black ;
+            transition: color 0.5s ease;
+            
           }
 
-          .coeur-logo img:hover {
-            transition-duration: 5s;
+          i:hover {
+            color: transparent;
             background: linear-gradient(to bottom, #FF79DA, #9356DC);
+            -webkit-background-clip: text;
+            -webkit-text-stroke: 1px transparent;
 
 
 
           }
         }
       }
-
-
+    
 
 
 
