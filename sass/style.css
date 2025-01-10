@@ -227,7 +227,7 @@ body main .restaurant1-menucard .restaurant1-menutitle i {
   font-size: 22px;
   color: transparent;
   -webkit-text-stroke: 1px black;
-  transition: color 1.5s ease, -webkit-text-stroke 1.5s ease;
+  transition: color 0.2s ease, -webkit-text-stroke 0.2s ease;
 }
 body main .restaurant1-menucard .restaurant1-menutitle i:hover {
   color: transparent;
@@ -261,6 +261,43 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 {
   gap: 5px;
   box-shadow: 2px 2px 5px grey;
   position: relative;
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 i {
+  display: none;
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 .animations-resto {
+  transform: scaleX(0);
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:hover .animations-resto {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 59px;
+  height: 100%;
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 500ms ease-in-out;
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:hover .fa-circle-check {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:hover .tarifs {
+  position: absolute;
+  transform: translateX(-60px);
+  transition: transform 500ms ease-in-out;
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 .tarifs {
+  transform: translateX(0);
+  top: 60%;
+  right: 20px;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 .entrées-title {
   font-family: "Roboto", sans-serif;
@@ -317,6 +354,43 @@ body main .restaurant1-menucard .restaurant1-menu-plats .plats1 {
   box-shadow: 2px 2px 5px grey;
   position: relative;
 }
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1 i {
+  display: none;
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1 .animations-resto {
+  transform: scaleX(0);
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1:hover .animations-resto {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 59px;
+  height: 100%;
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 500ms ease-in-out;
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1:hover .fa-circle-check {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1:hover .tarifs {
+  position: absolute;
+  transform: translateX(-60px);
+  transition: transform 500ms ease-in-out;
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1 .tarifs {
+  transform: translateX(0);
+  top: 60%;
+  right: 20px;
+}
 body main .restaurant1-menucard .restaurant1-menu-plats .plats1 .plats-title {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -371,6 +445,43 @@ body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 {
   gap: 5px;
   box-shadow: 2px 2px 5px grey;
   position: relative;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 i {
+  display: none;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 .animations-resto {
+  transform: scaleX(0);
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:hover .animations-resto {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 59px;
+  height: 100%;
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 500ms ease-in-out;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:hover .fa-circle-check {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:hover .tarifs {
+  position: absolute;
+  transform: translateX(-60px);
+  transition: transform 500ms ease-in-out;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 .tarifs {
+  transform: translateX(0);
+  top: 60%;
+  right: 20px;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 .desserts-title {
   font-family: "Roboto", sans-serif;
@@ -692,7 +803,7 @@ body .restaurants .restaurant-card a .coeur-logo i {
   font-size: 22px;
   color: transparent;
   -webkit-text-stroke: 1px black;
-  transition: color 1s ease-in-out, -webkit-text-stroke 1s ease-in-out;
+  transition: color 0.2s ease-in-out, -webkit-text-stroke 0.2s ease-in-out;
 }
 body .restaurants .restaurant-card a .coeur-logo i:hover {
   color: transparent;

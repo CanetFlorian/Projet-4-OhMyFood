@@ -253,7 +253,7 @@ body {
           font-size: 22px;
           color:transparent;
           -webkit-text-stroke: 1px black ;
-          transition: color 1.5s ease,-webkit-text-stroke 1.5s ease;
+          transition: color 0.2s ease,-webkit-text-stroke 0.2s ease;
           
         }
 
@@ -299,6 +299,56 @@ body {
           gap: 5px;
           box-shadow: 2px 2px 5px grey;
           position: relative;
+
+          i {display:none;}
+
+          .animations-resto {transform: scaleX(0);}
+
+          &:hover {
+          
+            
+            .animations-resto {
+              display:flex;
+              position: absolute;
+              top:0px;
+              right:0px;
+              align-items: center;
+              justify-content: center;
+              background-color: $color-tertiary;
+              border-top-right-radius: 15px;
+              border-bottom-right-radius: 15px;
+              width: 59px;
+              height: 100%;
+              transform-origin: right;
+              transform : scaleX(1);
+              transition: transform 500ms ease-in-out;
+              
+              
+            }
+
+            .fa-circle-check {
+            display: inline-block;
+            color:white;
+            font-size:20px;
+            }
+
+            .tarifs {
+              position:absolute;
+              transform: translateX(-60px );
+              transition: transform 500ms ease-in-out;
+            }
+
+          
+          }
+
+          .tarifs {
+            transform: translateX(0);
+            top: 60%;
+            right: 20px;
+
+          }
+
+
 
           .entrées-title {
             font-family: $police-texte;
@@ -373,6 +423,54 @@ body {
           box-shadow: 2px 2px 5px grey;
           position: relative;
 
+          i {display:none;}
+
+          .animations-resto {transform: scaleX(0);}
+
+          &:hover {
+          
+            
+            .animations-resto {
+              display:flex;
+              position: absolute;
+              top:0px;
+              right:0px;
+              align-items: center;
+              justify-content: center;
+              background-color: $color-tertiary;
+              border-top-right-radius: 15px;
+              border-bottom-right-radius: 15px;
+              width: 59px;
+              height: 100%;
+              transform-origin: right;
+              transform : scaleX(1);
+              transition: transform 500ms ease-in-out;
+              
+              
+            }
+
+            .fa-circle-check {
+            display: inline-block;
+            color:white;
+            font-size:20px;
+            }
+
+            .tarifs {
+              position:absolute;
+              transform: translateX(-60px );
+              transition: transform 500ms ease-in-out;
+            }
+
+          
+          }
+
+          .tarifs {
+            transform: translateX(0);
+            top: 60%;
+            right: 20px;
+
+          }
+
           .plats-title {
             font-family: $police-texte;
             font-size: 18px;
@@ -439,6 +537,54 @@ body {
 
           box-shadow: 2px 2px 5px grey;
           position: relative;
+
+          i {display:none;}
+
+          .animations-resto {transform: scaleX(0);}
+
+          &:hover {
+          
+            
+            .animations-resto {
+              display:flex;
+              position: absolute;
+              top:0px;
+              right:0px;
+              align-items: center;
+              justify-content: center;
+              background-color: $color-tertiary;
+              border-top-right-radius: 15px;
+              border-bottom-right-radius: 15px;
+              width: 59px;
+              height: 100%;
+              transform-origin: right;
+              transform : scaleX(1);
+              transition: transform 500ms ease-in-out;
+              
+              
+            }
+
+            .fa-circle-check {
+            display: inline-block;
+            color:white;
+            font-size:20px;
+            }
+
+            .tarifs {
+              position:absolute;
+              transform: translateX(-60px );
+              transition: transform 500ms ease-in-out;
+            }
+
+          
+          }
+
+          .tarifs {
+            transform: translateX(0);
+            top: 60%;
+            right: 20px;
+
+          }
 
           .desserts-title {
             font-family: $police-texte;
@@ -862,7 +1008,7 @@ body {
             font-size: 22px;
             color:transparent;
             -webkit-text-stroke: 1px black ;
-            transition: color 1s ease-in-out, -webkit-text-stroke 1s ease-in-out,  
+            transition: color 0.2s ease-in-out, -webkit-text-stroke 0.2s ease-in-out,  
             
             }
 
