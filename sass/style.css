@@ -231,6 +231,7 @@ body main .restaurant1-menucard .restaurant1-menutitle .coeur-logo {
   z-index: 1;
   background: white;
   font-size: 22px;
+  -webkit-background-clip: text;
 }
 body main .restaurant1-menucard .restaurant1-menutitle .coeur-logo:hover {
   opacity: 0;
