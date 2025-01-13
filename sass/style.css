@@ -254,11 +254,20 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .menu-entrées-title 
   font-weight: 300;
   margin-left: 20px;
   padding-bottom: 10px;
+  position: relative;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .menu-entrées-title .entrées-underline {
-  -webkit-text-decoration: underline 3px #99E2D0;
-          text-decoration: underline 3px #99E2D0;
   position: relative;
+  display: inline-block;
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .menu-entrées-title .entrées-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #99E2D0;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 {
   display: flex;
@@ -348,11 +357,20 @@ body main .restaurant1-menucard .restaurant1-menu-plats .menu-plats-title {
   font-weight: 300;
   margin-left: 20px;
   padding-bottom: 10px;
+  position: relative;
 }
 body main .restaurant1-menucard .restaurant1-menu-plats .menu-plats-title .plats-underline {
-  -webkit-text-decoration: underline 3px #99E2D0;
-          text-decoration: underline 3px #99E2D0;
   position: relative;
+  display: inline-block;
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .menu-plats-title .plats-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #99E2D0;
 }
 body main .restaurant1-menucard .restaurant1-menu-plats .plats1 {
   display: flex;
@@ -442,11 +460,20 @@ body main .restaurant1-menucard .restaurant1-menu-desserts .menu-desserts-title 
   font-weight: 300;
   margin-left: 20px;
   padding-bottom: 10px;
+  position: relative;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .menu-desserts-title .dessert-underline {
-  -webkit-text-decoration: underline 3px #99E2D0;
-          text-decoration: underline 3px #99E2D0;
   position: relative;
+  display: inline-block;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .menu-desserts-title .dessert-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #99E2D0;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 {
   display: flex;
