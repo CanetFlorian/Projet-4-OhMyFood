@@ -270,6 +270,34 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .menu-entrées-title 
   background-color: #99E2D0;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  animation: apparaitre 1s forwards;
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:nth-child(1) {
+  animation-delay: 0s;
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:nth-child(2) {
+  animation-delay: 1s;
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:nth-child(3) {
+  animation-delay: 2s;
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:nth-child(4) {
+  animation-delay: 3s;
+}
+@keyframes apparaitre {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
@@ -373,6 +401,24 @@ body main .restaurant1-menucard .restaurant1-menu-plats .menu-plats-title .plats
   background-color: #99E2D0;
 }
 body main .restaurant1-menucard .restaurant1-menu-plats .plats1 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  animation: apparaitre 1s forwards;
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1:nth-child(1) {
+  animation-delay: 0s;
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1:nth-child(2) {
+  animation-delay: 4s;
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1:nth-child(3) {
+  animation-delay: 5s;
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1:nth-child(4) {
+  animation-delay: 6s;
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1 {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
@@ -474,6 +520,24 @@ body main .restaurant1-menucard .restaurant1-menu-desserts .menu-desserts-title 
   width: 100%;
   height: 3px;
   background-color: #99E2D0;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  animation: apparaitre 1s forwards;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:nth-child(1) {
+  animation-delay: 0s;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:nth-child(2) {
+  animation-delay: 7s;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:nth-child(3) {
+  animation-delay: 8s;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:nth-child(4) {
+  animation-delay: 9s;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 {
   display: flex;

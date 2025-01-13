@@ -305,6 +305,46 @@ body {
 
         }
 
+        .entrées1  {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 1s ease-out, transform 1s ease-out;
+          animation: apparaitre 1s forwards;
+
+        
+
+          &:nth-child(1) {
+          animation-delay: 0s;
+          }
+
+          &:nth-child(2) {
+          animation-delay: 1s;
+          }
+
+          &:nth-child(3) {
+          animation-delay: 2s;
+          }
+
+          &:nth-child(4) {
+            animation-delay: 3s;
+            }
+        }
+
+
+
+        @keyframes apparaitre {
+          0% {
+            opacity:0;
+            transform: translateY(20px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          
+        }
+
         .entrées1 {
 
           display: flex;
@@ -445,6 +485,31 @@ body {
 
         }
 
+        .plats1  {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 1s ease-out, transform 1s ease-out;
+          animation: apparaitre 1s forwards;
+
+        
+
+          &:nth-child(1) {
+          animation-delay: 0s;
+          }
+
+          &:nth-child(2) {
+          animation-delay: 4s;
+          }
+
+          &:nth-child(3) {
+          animation-delay: 5s;
+          }
+
+          &:nth-child(4) {
+            animation-delay: 6s;
+            }
+        }
+
         .plats1 {
 
           display: flex;
@@ -571,8 +636,31 @@ body {
               background-color: $color-tertiary; 
             }
           }
+        }
 
+        .desserts1  {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 1s ease-out, transform 1s ease-out;
+          animation: apparaitre 1s forwards;
 
+        
+
+          &:nth-child(1) {
+          animation-delay: 0s;
+          }
+
+          &:nth-child(2) {
+          animation-delay: 7s;
+          }
+
+          &:nth-child(3) {
+          animation-delay: 8s;
+          }
+
+          &:nth-child(4) {
+            animation-delay: 9s;
+            }
         }
 
         .desserts1 {
