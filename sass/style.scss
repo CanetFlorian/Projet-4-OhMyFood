@@ -200,20 +200,17 @@ body {
 
     .images-resto1 {
       width: 100%;
-      z-index: -1;
-      position: relative;
-      overflow: visible;
-      height: 200px;
+      height: 275px;
+      
     }
 
 
     .images-resto1 img {
       width: 100%;
-      height: auto;
-      position: relative;
+      height:275px;
+      object-position: center;
       object-fit: cover;
-
-
+      
     }
 
     .restaurant1-menucard {
@@ -226,6 +223,7 @@ body {
       flex-direction: column;
       align-items: center;
       width: 100%;
+      margin-top: -50px;
 
       .restaurant1-menutitle {
         display: flex;
@@ -241,31 +239,37 @@ body {
           margin-top:40px;
           
         }
-
+        .pos-coeur{
+          position:relative;
+          margin-top:40px;
+        }
         .coeur-logo  {
+          position: absolute;
           width: 22px;
           height: 21px;
-          margin-top: 42px;
-
-        }
-
-        i {
-          font-size: 22px;
           color:transparent;
-          -webkit-text-stroke: 1px black ;
-          transition: color 0.2s ease,-webkit-text-stroke 0.2s ease;
-          
+          -webkit-text-stroke: 1px black;
+          transition: opacity 1s ease-out;
+          z-index: 1;
+          background: white;
+          font-size:22px;
+
+          &:hover {
+            opacity: 0;
+          }
         }
 
-        i:hover {
-          color: transparent;
+        .coeur-logo2 {
           background: linear-gradient(to bottom, #FF79DA, #9356DC);
           -webkit-background-clip: text;
-          -webkit-text-stroke: 1px transparent;
-
-
-
+          color:transparent;
+          font-size: 22px;
+          display:flex;
+          z-index: 0;
+          opacity:1;
         }
+
+      
       }
 
       .restaurant1-menu-entrées {
@@ -302,16 +306,18 @@ body {
 
           i {display:none;}
 
-          .animations-resto {transform: scaleX(0);}
+          .animations-resto {
+            transform: scaleX(0);
+            position: absolute;
+            top:0px;
+            right:0px;
+          }
 
           &:hover {
           
             
             .animations-resto {
               display:flex;
-              position: absolute;
-              top:0px;
-              right:0px;
               align-items: center;
               justify-content: center;
               background-color: $color-tertiary;
@@ -339,12 +345,15 @@ body {
             }
 
           
+
+          
           }
 
           .tarifs {
             transform: translateX(0);
             top: 60%;
             right: 20px;
+        
 
           }
 
@@ -358,6 +367,7 @@ body {
             overflow: hidden;
             text-overflow: ellipsis;
             width: 100%;
+            line-height: 1.2;
 
           }
 
@@ -381,6 +391,7 @@ body {
               overflow: hidden;
               text-overflow: ellipsis;
               width: 100%;
+              line-height: 1.2;
             }
 
 
@@ -425,16 +436,16 @@ body {
 
           i {display:none;}
 
-          .animations-resto {transform: scaleX(0);}
+          .animations-resto {transform: scaleX(0);
+          position:absolute;
+        top:0px;
+      right: 0px;}
 
           &:hover {
           
             
             .animations-resto {
               display:flex;
-              position: absolute;
-              top:0px;
-              right:0px;
               align-items: center;
               justify-content: center;
               background-color: $color-tertiary;
@@ -461,6 +472,8 @@ body {
               transition: transform 500ms ease-in-out;
             }
 
+        
+
           
           }
 
@@ -479,6 +492,7 @@ body {
             overflow: hidden;
             text-overflow: ellipsis;
             width: 100%;
+            line-height: 1.2;
           }
 
           .position-sub-tarifs {
@@ -501,6 +515,7 @@ body {
             overflow: hidden;
             text-overflow: ellipsis;
             width: 100%;
+            line-height: 1.2;
             }
           }
         }
@@ -534,28 +549,29 @@ body {
           margin: 16px;
           padding: 16px;
           gap: 5px;
-
           box-shadow: 2px 2px 5px grey;
           position: relative;
 
           i {display:none;}
 
-          .animations-resto {transform: scaleX(0);}
+          .animations-resto {transform: scaleX(0);
+            position: absolute;
+            top:0px;
+            right:0px;
+          }
+           
 
           &:hover {
           
             
             .animations-resto {
               display:flex;
-              position: absolute;
-              top:0px;
-              right:0px;
               align-items: center;
               justify-content: center;
               background-color: $color-tertiary;
               border-top-right-radius: 15px;
               border-bottom-right-radius: 15px;
-              width: 59px;
+              width: 60px;
               height: 100%;
               transform-origin: right;
               transform : scaleX(1);
@@ -594,6 +610,7 @@ body {
             overflow: hidden;
             text-overflow: ellipsis;
             width: 100%;
+            line-height: 1.2;
           }
 
           .position-sub-tarifs {
@@ -616,6 +633,9 @@ body {
             overflow: hidden;
             text-overflow: ellipsis;
             width: 100%;
+            height: auto;
+            line-height: 1.2;
+            
             }
           }
         }
@@ -940,7 +960,7 @@ body {
             width: 100%;
             height: 175px;
             object-fit: cover;
-            object-position: center center;
+            object-position:center;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             
@@ -995,33 +1015,48 @@ body {
             }
           }
 
+      
+
+          
+
           .coeur-logo {
             position: absolute;
            right:10px;
            top:200px;
-           
-           
-
-          
-
-            i {
             font-size: 22px;
             color:transparent;
             -webkit-text-stroke: 1px black ;
-            transition: color 0.2s ease-in-out, -webkit-text-stroke 0.2s ease-in-out,  
+            transition: opacity 1s ease-out;
+            z-index: 1;
+            background: white;
             
-            }
+          
 
-            i:hover {
-            color: transparent;
-            background: linear-gradient(to bottom, #FF79DA, #9356DC);
-            -webkit-background-clip: text;
-            -webkit-text-stroke: 1px transparent;
-
-
-
+            &:hover {
+             
+            opacity:0;
+              
             }
           }
+        
+        
+          
+
+          .coeur-logo2 {
+            position: absolute;
+            right:10px;
+            top:200px;
+            background: linear-gradient(to bottom, #FF79DA, #9356DC);
+            -webkit-background-clip: text;
+            color:transparent;
+            font-size: 22px;
+            display:flex;
+            z-index: 0;
+            opacity:1;
+          }
+          
+
+    
         }
       }
     
@@ -1116,6 +1151,22 @@ body {
 
     main { 
 
+      .images-resto1 {
+        width: 100%;
+        height: 383px;
+        
+      }
+  
+  
+      .images-resto1 img {
+        width: 100%;
+        height:383px;
+        object-position: center;
+        object-fit: cover;
+        
+      }
+
+     
       .localisation-restaurant {
         box-shadow: none;
       }
@@ -1134,7 +1185,7 @@ body {
       }
 
       .restaurant1-menucard{
-        margin-top:150px;
+        margin-top:-40px;
         width: 1050px;
         margin-left:auto;
         margin-right:auto;
