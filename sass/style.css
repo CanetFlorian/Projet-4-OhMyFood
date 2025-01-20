@@ -1,4 +1,34 @@
 @charset "UTF-8";
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes disparition-loader {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes apparaitre {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* ************************************* Reset ***************/
 html,
 body,
@@ -159,6 +189,46 @@ body {
   margin: 0;
   width: auto;
 }
+body .container-loader {
+  z-index: 5;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: disparition-loader 3s forwards;
+  background-color: white;
+}
+body .load {
+  width: 30vh;
+  height: 22.5vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+body .load__bar {
+  background-color: #9356DC;
+  height: 100%;
+  width: 3vh;
+  animation: bars 1000ms backwards infinite;
+  animation-direction: alternate;
+}
+body .load__bar--1 {
+  animation-delay: 200ms;
+}
+body .load__bar--2 {
+  animation-delay: 400ms;
+}
+body .load__bar--3 {
+  animation-delay: 600ms;
+}
+body .load__bar--4 {
+  animation-delay: 800ms;
+}
+body .load__bar--5 {
+  animation-delay: 1000ms;
+}
 body header {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -287,16 +357,6 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:nth-child(
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:nth-child(4) {
   animation-delay: 3s;
-}
-@keyframes apparaitre {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 {
   display: flex;

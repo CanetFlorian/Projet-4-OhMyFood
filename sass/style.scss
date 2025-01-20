@@ -6,6 +6,49 @@ $police-titre: "Shrikhand", cursive;
 $police-texte: "Roboto", sans-serif;
 
 $clr-btn : linear-gradient(#FF79DA, #9356DC);
+
+$cd-bars:$color-primary;
+$size: 3vh;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / 5;
+
+@keyframes bars {
+  0% { 
+      transform: scaleY(0.5);
+  }  
+  100% { 
+      transform: scaleY(1.0);
+  }
+}
+
+@keyframes disparition-loader {
+  0% {
+    opacity:1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes apparaitre {
+  0% {
+    opacity:0;
+    transform: translateY(20px);
+  }
+
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
 /* ************************************* Reset ***************/
 html,
 body,
@@ -170,7 +213,43 @@ table {
 body {
   margin: 0;
   width: auto;
+  
+  .container-loader {
+    z-index:5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: disparition-loader 3s forwards;
+    background-color: white;
+  }
 
+
+
+.load {
+    width: $size*10;
+    height: $size*7.5;
+    display: flex;
+    justify-content: space-evenly;
+    &__bar {
+        background-color: $cd-bars;
+        height: 100%;
+        width: $size;
+        animation: bars $anim-dur backwards infinite ;
+        animation-direction: alternate;
+        @for $i from 1 through 5 {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+        
+            
+        }
+    }
+}
+  
   header {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -333,18 +412,7 @@ body {
 
 
 
-        @keyframes apparaitre {
-          0% {
-            opacity:0;
-            transform: translateY(20px);
-          }
 
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-          
-        }
 
         .entrées1 {
 
