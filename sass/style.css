@@ -208,6 +208,7 @@ body .load {
   justify-content: space-evenly;
 }
 body .load__bar {
+  border-radius: 20px;
   background-color: #9356DC;
   height: 100%;
   width: 3vh;

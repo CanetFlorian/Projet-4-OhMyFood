@@ -7,7 +7,7 @@ $police-texte: "Roboto", sans-serif;
 
 $clr-btn : linear-gradient(#FF79DA, #9356DC);
 
-$cd-bars:$color-primary;
+$cd-bars: $color-primary;
 $size: 3vh;
 $anim-dur: 1000ms;
 $anim-delay: $anim-dur / 5;
@@ -235,6 +235,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     &__bar {
+        border-radius: 20px;
         background-color: $cd-bars;
         height: 100%;
         width: $size;
