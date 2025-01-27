@@ -467,6 +467,20 @@ body {
               transition: transform 500ms ease-in-out;
             }
 
+            .entrées-title {
+              width: 80%;
+            }
+
+            .position-sub-tarifs {
+              width: 80%;
+
+              .entrées-subtitle {
+                width: 80%;
+              }
+            }
+
+
+
           
 
           
@@ -493,6 +507,8 @@ body {
             line-height: 1.2;
 
           }
+
+          
 
           .position-sub-tarifs {
             display: flex;
@@ -629,6 +645,18 @@ body {
               position:absolute;
               transform: translateX(-60px );
               transition: transform 500ms ease-in-out;
+            }
+
+            .plats-title {
+              width: 80%;
+            }
+
+            .position-sub-tarifs {
+              width: 80%;
+
+              .plats-subtitle {
+                width: 80%;
+              }
             }
 
         
@@ -783,6 +811,18 @@ body {
               position:absolute;
               transform: translateX(-60px );
               transition: transform 500ms ease-in-out;
+            }
+
+            .desserts-title {
+              width: 80%;
+            }
+
+            .position-sub-tarifs {
+              width: 80%;
+
+              .desserts-subtitle {
+                width: 80%;
+              }
             }
 
           

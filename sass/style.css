@@ -402,6 +402,15 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:hover .tar
   transform: translateX(-60px);
   transition: transform 500ms ease-in-out;
 }
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:hover .entrées-title {
+  width: 80%;
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:hover .position-sub-tarifs {
+  width: 80%;
+}
+body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:hover .position-sub-tarifs .entrées-subtitle {
+  width: 80%;
+}
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 .tarifs {
   transform: translateX(0);
   top: 60%;
@@ -523,6 +532,15 @@ body main .restaurant1-menucard .restaurant1-menu-plats .plats1:hover .tarifs {
   transform: translateX(-60px);
   transition: transform 500ms ease-in-out;
 }
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1:hover .plats-title {
+  width: 80%;
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1:hover .position-sub-tarifs {
+  width: 80%;
+}
+body main .restaurant1-menucard .restaurant1-menu-plats .plats1:hover .position-sub-tarifs .plats-subtitle {
+  width: 80%;
+}
 body main .restaurant1-menucard .restaurant1-menu-plats .plats1 .tarifs {
   transform: translateX(0);
   top: 60%;
@@ -643,6 +661,15 @@ body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:hover .tar
   position: absolute;
   transform: translateX(-60px);
   transition: transform 500ms ease-in-out;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:hover .desserts-title {
+  width: 80%;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:hover .position-sub-tarifs {
+  width: 80%;
+}
+body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:hover .position-sub-tarifs .desserts-subtitle {
+  width: 80%;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 .tarifs {
   transform: translateX(0);
