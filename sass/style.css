@@ -298,7 +298,7 @@ body main .restaurant1-menucard .restaurant1-menutitle .coeur-logo {
   height: 21px;
   color: transparent;
   -webkit-text-stroke: 1px black;
-  transition: opacity 1s ease-out;
+  transition: opacity 1s ease-in-out;
   z-index: 1;
   background: white;
   font-size: 22px;
@@ -734,6 +734,10 @@ body main .restaurant1-menucard .commander .btnresto {
 body main .restaurant1-menucard .commander .btnresto:hover {
   opacity: 0.8;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+body main .restaurant1-menucard .commander .btnresto:not(:hover) {
+  opacity: 1;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 body .localisation-restaurant {
   background-color: #EAEAEA;
