@@ -728,9 +728,12 @@ body main .restaurant1-menucard .commander .btnresto {
   position: relative;
   overflow: hidden;
   transition: opacity 1s ease;
+  box-shadow: 1s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 body main .restaurant1-menucard .commander .btnresto:hover {
   opacity: 0.8;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 body .localisation-restaurant {
   background-color: #EAEAEA;
@@ -801,9 +804,12 @@ body .presentation a {
   margin-bottom: 60px;
   text-decoration: none;
   transition: opacity 1s ease;
+  box-shadow: 1s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 body .presentation a:hover {
   opacity: 0.8;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 body .fonctionnement-title {
   font-family: "Roboto", sans-serif;
