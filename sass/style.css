@@ -188,6 +188,7 @@ table {
 body {
   margin: 0;
   width: auto;
+  /******* CSS---- INDEX-------------- *******/
 }
 body .container-loader {
   z-index: 4;
@@ -249,9 +250,6 @@ body header img {
   justify-content: center;
   margin: auto;
 }
-body main {
-  /******* CSS---- INDEX-------------- *******/
-}
 body main .images-resto1 {
   width: 100%;
   height: 275px;
@@ -303,6 +301,7 @@ body main .restaurant1-menucard .restaurant1-menutitle .coeur-logo {
   background: white;
   font-size: 22px;
   -webkit-background-clip: text;
+  cursor: pointer;
 }
 body main .restaurant1-menucard .restaurant1-menutitle .coeur-logo:hover {
   opacity: 0;
@@ -362,19 +361,20 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:nth-child(
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 {
   display: flex;
   flex-direction: column;
-  background-color: #F6F6F6;
+  background-color: white;
   border-radius: 15px;
   margin: 16px;
   padding: 16px;
   gap: 5px;
   box-shadow: 2px 2px 5px grey;
   position: relative;
+  overflow: hidden;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 i {
   display: none;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1 .animations-resto {
-  transform: scaleX(0);
+  transform: translateX(100%);
   position: absolute;
   top: 0px;
   right: 0px;
@@ -389,7 +389,7 @@ body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:hover .ani
   width: 59px;
   height: 100%;
   transform-origin: right;
-  transform: scaleX(1);
+  transform: translateX(0);
   transition: transform 500ms ease-in-out;
 }
 body main .restaurant1-menucard .restaurant1-menu-entrées .entrées1:hover .fa-circle-check {
@@ -499,12 +499,13 @@ body main .restaurant1-menucard .restaurant1-menu-plats .plats1 {
   gap: 5px;
   box-shadow: 2px 2px 5px grey;
   position: relative;
+  overflow: hidden;
 }
 body main .restaurant1-menucard .restaurant1-menu-plats .plats1 i {
   display: none;
 }
 body main .restaurant1-menucard .restaurant1-menu-plats .plats1 .animations-resto {
-  transform: scaleX(0);
+  transform: translateX(100%);
   position: absolute;
   top: 0px;
   right: 0px;
@@ -519,7 +520,7 @@ body main .restaurant1-menucard .restaurant1-menu-plats .plats1:hover .animation
   width: 59px;
   height: 100%;
   transform-origin: right;
-  transform: scaleX(1);
+  transform: translateX(0);
   transition: transform 500ms ease-in-out;
 }
 body main .restaurant1-menucard .restaurant1-menu-plats .plats1:hover .fa-circle-check {
@@ -629,12 +630,13 @@ body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 {
   gap: 5px;
   box-shadow: 2px 2px 5px grey;
   position: relative;
+  overflow: hidden;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 i {
   display: none;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1 .animations-resto {
-  transform: scaleX(0);
+  transform: translateX(100%);
   position: absolute;
   top: 0px;
   right: 0px;
@@ -649,7 +651,7 @@ body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:hover .ani
   width: 60px;
   height: 100%;
   transform-origin: right;
-  transform: scaleX(1);
+  transform: translateX(0);
   transition: transform 500ms ease-in-out;
 }
 body main .restaurant1-menucard .restaurant1-menu-desserts .desserts1:hover .fa-circle-check {
@@ -837,7 +839,8 @@ body .fonctionnement .choisissez-un-restaurant .fonctionnement-number1 {
   width: 20px;
   height: 20px;
   background-color: #9356DC;
-  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -869,7 +872,8 @@ body .fonctionnement .composez-votre-menu .fonctionnement-number2 {
   width: 20px;
   height: 20px;
   background-color: #9356DC;
-  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -901,7 +905,8 @@ body .fonctionnement .degustez-au-restaurant .fonctionnement-number3 {
   width: 20px;
   height: 20px;
   background-color: #9356DC;
-  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -932,11 +937,15 @@ body .restaurants {
   padding-top: 20px;
   background-color: #F6F6F6;
 }
+body .restaurants .restaurant-card {
+  position: relative;
+}
 body .restaurants .restaurant-card a {
   display: flex;
   justify-content: center;
   text-decoration: none;
   padding-bottom: 20px;
+  position: relative;
 }
 body .restaurants .restaurant-card a .card-resto {
   width: 90%;
@@ -994,9 +1003,9 @@ body .restaurants .restaurant-card a .nouveau-logo .text-nouveau-logo span {
   top: 20px;
   right: 20px;
 }
-body .restaurants .restaurant-card a .coeur-logo {
+body .restaurants .restaurant-card .coeur-logo {
   position: absolute;
-  right: 10px;
+  right: 40px;
   top: 200px;
   font-size: 22px;
   color: transparent;
@@ -1004,13 +1013,14 @@ body .restaurants .restaurant-card a .coeur-logo {
   transition: opacity 1s ease-out;
   z-index: 1;
   background: white;
+  cursor: pointer;
 }
-body .restaurants .restaurant-card a .coeur-logo:hover {
+body .restaurants .restaurant-card .coeur-logo:hover {
   opacity: 0;
 }
-body .restaurants .restaurant-card a .coeur-logo2 {
+body .restaurants .restaurant-card .coeur-logo2 {
   position: absolute;
-  right: 10px;
+  right: 40px;
   top: 200px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   -webkit-background-clip: text;
@@ -1128,18 +1138,9 @@ footer a {
     margin-left: 20px;
   }
   body main .fonctionnement {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-left: 20px;
-  }
-  body main .fonctionnement .choisissez-un-restaurant {
-    padding-right: 60px;
-  }
-  body main .fonctionnement .composez-votre-menu {
-    padding-right: 60px;
-  }
-  body main .fonctionnement .degustez-au-restaurant {
-    padding-right: 60px;
   }
   body main .restaurant_title {
     padding-left: 110px;
@@ -1150,6 +1151,12 @@ footer a {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 30px;
+  }
+  body main .restaurants .restaurant-card .coeur-logo {
+    margin-right: 20px;
+  }
+  body main .restaurants .restaurant-card .coeur-logo2 {
+    margin-right: 20px;
   }
   body footer {
     flex-direction: row;
